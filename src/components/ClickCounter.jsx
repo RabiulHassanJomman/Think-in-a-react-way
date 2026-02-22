@@ -1,6 +1,4 @@
-/* eslint-disable react-refresh/only-export-components */
-import withCounter from "./HOC/withCounter";
-const ClickCounter = (props) => {
+function ClickCounter(props) {
   const { count, increamentCount } = props;
   return (
     <div>
@@ -9,6 +7,6 @@ const ClickCounter = (props) => {
       </button>
     </div>
   );
-};
+}
 
-export default withCounter(ClickCounter);
+export default ClickCounter;

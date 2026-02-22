@@ -1,12 +1,15 @@
-import ClickComponent from "./components/ClickCounter";
-import HoverCounter from "./components/HoverCounter";
-import DownCounter from "./components/DownCounter";
+import ClickCounter from "./components/ClickCounter";
+import Counter from "./components/Counter";
 function App() {
   return (
     <>
-      <ClickComponent></ClickComponent>
-      <HoverCounter></HoverCounter>
-      <DownCounter isLoading={false}></DownCounter>
+      <Counter>
+        {(count, increamentCount) => ( <ClickCounter
+            count={count}
+            increamentCount={increamentCount}
+          ></ClickCounter>)
+        }
+      </Counter>
     </>
   );
 }
