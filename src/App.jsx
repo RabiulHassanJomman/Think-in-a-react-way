@@ -1,6 +1,8 @@
+import Form from "./Components/Form"
+
 function App() {
   return <>
-    <p>hello world</p>
+  <Form></Form>
   </>
 }
 
