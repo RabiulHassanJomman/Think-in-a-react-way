@@ -1,7 +1,15 @@
+import { useState } from "react";
+import MyComponent from "./Components/MyComponent";
+
 function App() {
-  return <>
-    <p>hello world</p>
-  </>
+  const [show, setShow] = useState(true);
+
+  return (
+    <>
+      <div className="app"> {show && <MyComponent></MyComponent>} </div>
+      <button onClick={() => setShow((prevShow) => !prevShow )}>{show ? "hide" : "show"} </button>
+    </>
+  );
 }
 
-export default App
+export default App;
