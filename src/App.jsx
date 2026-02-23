@@ -1,7 +1,13 @@
+import Todo from "./Components/Todo";
+import Counter from "./components/Counter";
+
 function App() {
-  return <>
-    <p>hello world</p>
-  </>
+  return (
+    <>
+      <Todo> </Todo>
+      <Counter></Counter>
+    </>
+  );
 }
 
-export default App
+export default App;
