@@ -1,6 +1,8 @@
+import LayoutComponent from "./LayoutComponent"
+
 function App() {
   return <>
-    <p>hello world</p>
+  <LayoutComponent></LayoutComponent>
   </>
 }
 
