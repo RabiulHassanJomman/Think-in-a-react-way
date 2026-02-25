@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./components/styles/Global.styles";
 import Tutorial from "./components/Tutorial";
-import {themeContext} from "./contexts/themeContext";
 
 export default function App() {
   const [mode, setMode] = useState("dark");
